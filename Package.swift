@@ -22,7 +22,7 @@ let package = Package(
             name: "MyAwesomePackage",
             dependencies: [],
             swiftSettings: [
-                .define("TEST")
+                .define("TEST", .when(configuration: .debug))
             ]
         ),
         .testTarget(
