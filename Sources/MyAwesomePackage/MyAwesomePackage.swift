@@ -5,7 +5,7 @@ public struct MyAwesomePackage {
     }
     
     public func sendHello() -> String {
-#if ENV_SWITCHING_ENABLED
+#if TEST
         return "TEST"
 #else
         return "NONTEST"
