@@ -9,7 +9,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MyAwesomePackage",
-            targets: ["MyAwesomePackage"])
+            targets: ["MyAwesomePackage"]),
+        .library(
+            name: "MyAwesomePackageDebug",
+            targets: ["MyAwesomePackageDebug"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +24,7 @@ let package = Package(
         .target(
             name: "MyAwesomePackage",
             dependencies: [],
+            path: "Sources/MyAwesomePackage",
             swiftSettings: [
                 .define("PROD")
             ]
@@ -28,6 +32,7 @@ let package = Package(
         .target(
             name: "MyAwesomePackageDebug",
             dependencies: ["MyAwesomePackage"],
+            path: "Sources/MyAwesomePackageDebug",
             swiftSettings: [
                 .define("CUSTOM")
             ]
