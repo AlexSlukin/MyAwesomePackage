@@ -23,6 +23,7 @@ let package = Package(
         .target(
             name: "MyAwesomePackage",
             dependencies: [],
+            path: "Source/MyAwesomePackage",
             swiftSettings: [
                 .define("PROD")
             ]
@@ -30,6 +31,7 @@ let package = Package(
         .target(
             name: "MyAwesomePackageDebug",
             dependencies: ["MyAwesomePackage"],
+            path: "Source/MyAwesomePackage",
             swiftSettings: [
                 .define("CUSTOM")
             ]
