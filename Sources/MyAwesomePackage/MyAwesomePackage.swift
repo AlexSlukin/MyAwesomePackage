@@ -5,6 +5,12 @@ public struct MyAwesomePackage {
     }
     
     public func sendHello() -> String {
-        return "Release"
+        #if DEBUG
+            return "Debug"
+        #elseif PROD
+            return "Prod"
+        #else
+            return "Error"
+        #endif
     }
 }

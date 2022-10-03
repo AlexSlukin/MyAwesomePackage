@@ -22,12 +22,15 @@ let package = Package(
             name: "MyAwesomePackage",
             dependencies: [],
             swiftSettings: [
-                .define("TEST", .when(configuration: .debug))
+                .define("PROD")
             ]
         ),
         .target(
             name: "MyAwesomePackageDebug",
-            dependencies: []
+            dependencies: ["MyAwesomePackage"],
+            swiftSettings: [
+                .define("DEBUG")
+            ]
         ),
         .testTarget(
             name: "MyAwesomePackageTests",
