@@ -5,7 +5,7 @@ public struct MyAwesomePackage {
     }
     
     public func sendHello() -> String {
-        #if DEBUG
+        #if CUSTOM
             return "Debug"
         #elseif PROD
             return "Prod"

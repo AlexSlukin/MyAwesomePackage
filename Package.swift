@@ -31,7 +31,7 @@ let package = Package(
             name: "MyAwesomePackageDebug",
             dependencies: ["MyAwesomePackage"],
             swiftSettings: [
-                .define("DEBUG")
+                .define("CUSTOM")
             ]
         ),
         .testTarget(
