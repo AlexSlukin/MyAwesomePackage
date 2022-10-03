@@ -11,7 +11,7 @@ let package = Package(
             name: "MyAwesomePackage",
             targets: ["MyAwesomePackage"]),
         .library(name: "MyAwesomePackageDebug",
-                 targets: ["MyAwesomePackageDebug", "MyAwesomePackage"]),
+                 targets: ["MyAwesomePackageDebug"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
