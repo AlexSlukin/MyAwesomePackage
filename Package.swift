@@ -11,7 +11,7 @@ let package = Package(
             name: "MyAwesomePackage",
             targets: ["MyAwesomePackage"]),
         .library(name: "MyAwesomePackageDebug",
-                 targets: ["MyAwesomePackageDebug"]),
+                 targets: ["MyAwesomePackageDebug", "MyAwesomePackage"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,7 +29,7 @@ let package = Package(
         ),
         .target(
             name: "MyAwesomePackageDebug",
-            dependencies: [.product(name: "MyAwesomePackage")],
+            dependencies: [],
             swiftSettings: [
                 .define("CUSTOM")
             ]
