@@ -29,7 +29,7 @@ let package = Package(
         ),
         .target(
             name: "MyAwesomePackageDebug",
-            dependencies: [.targetItem(name: "MyAwesomePackage", condition: nil)],
+            dependencies: [.byName(name: "MyAwesomePackage")],
             swiftSettings: [
                 .define("CUSTOM")
             ]
