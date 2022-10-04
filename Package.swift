@@ -31,11 +31,11 @@ let package = Package(
             name: "MyAwesomePackageDebug",
             dependencies: ["MyAwesomePackageShared"],
             swiftSettings: [
-                .define("CUSTOM")
+                .define("ENV_SWITCHING_ENABLE")
             ]
         ),
         .target(
-            name: "MyAwesomePackageShared",
+            name: "MyAwesomePackageShared", 
             dependencies: []
         ),
         .testTarget(

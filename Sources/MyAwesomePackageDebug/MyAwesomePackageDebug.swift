@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MyAwesomePackageShared
 
 public struct MyAwesomePackageDebug {
     public private(set) var text = "Hello, World!"
