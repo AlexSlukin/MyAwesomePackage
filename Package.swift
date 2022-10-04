@@ -22,17 +22,21 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MyAwesomePackage",
-            dependencies: [],
+            dependencies: ["MyAwesomePackageShared"],
             swiftSettings: [
                 .define("PROD")
             ]
         ),
         .target(
             name: "MyAwesomePackageDebug",
-            dependencies: ["MyAwesomePackage"],
+            dependencies: ["MyAwesomePackageShared"],
             swiftSettings: [
                 .define("CUSTOM")
             ]
+        ),
+        .target(
+            name: "MyAwesomePackageShared",
+            dependencies: []
         ),
         .testTarget(
             name: "MyAwesomePackageTests",
