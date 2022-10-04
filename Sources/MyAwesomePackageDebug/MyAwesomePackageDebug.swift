@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MyAwesomePackage {
+public struct MyAwesomePackageDebug {
     public private(set) var text = "Hello, World!"
 
     public init() {
