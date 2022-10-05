@@ -116,6 +116,22 @@
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "MyAwesomePackageDebug"
+            BuildableName = "MyAwesomePackageDebug"
+            BlueprintName = "MyAwesomePackageDebug"
+            ReferencedContainer = "container:">
+         </BuildableReference>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = ""
+            value = ""
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
