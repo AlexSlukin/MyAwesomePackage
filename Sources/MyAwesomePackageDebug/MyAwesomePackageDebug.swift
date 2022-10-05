@@ -10,15 +10,15 @@ import Foundation
 
 public struct MyAwesomePackageDebug {
     public private(set) var text = "Hello, World!"
-
+    
     public init() {
     }
     
     public func sendHello() -> String {
-        #if CUSTOM
-            return "Debug"
-        #else
-            return "Error"
-        #endif
+#if CUSTOM
+        return "Debug"
+#else
+        return "Error"
+#endif
     }
 }
