@@ -46,7 +46,7 @@ let package = Package(
 import Foundation
 
 if ProcessInfo.processInfo.environment["MY_SWITCH"] == "ENABLED" {
-    for target in package.targets where target.name == "MyAwesomePackageShared" {
+    for target in package.targets {
         target.swiftSettings?.append(.define("CUSTOM"))
     }
 }
