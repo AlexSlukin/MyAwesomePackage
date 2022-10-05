@@ -15,6 +15,10 @@ public struct MyAwesomePackageDebug {
     }
     
     public func sendHello() -> String {
-        return "Debug"
+        #if CUSTOM
+            return "Debug"
+        #else
+            return "Error"
+        #endif
     }
 }
