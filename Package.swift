@@ -38,9 +38,6 @@ let package = Package(
         .target(
             name: "MyAwesomePackageShared",
             dependencies: []
-        ),
-        .testTarget(
-            name: "MyAwesomePackageTests",
-            dependencies: [])
+        )
     ]
 )
